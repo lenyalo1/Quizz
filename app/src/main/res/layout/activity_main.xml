@@ -48,13 +48,13 @@
             android:layout_height="wrap_content"
             android:text="biology"
             android:textSize="20sp"
-            android:id="@+id/btn_bio"
+            android:id="@+id/btn_biology"
             android:textAllCaps="true"
             android:layout_weight="1"
             android:layout_margin="8dp"
             style="?android:attr/borderlessButtonStyle"
             android:fontFamily="cursive"
-            android:onClick="bio"/>
+            android:onClick="biology"/>
 
         <Button
             android:layout_width="match_parent"

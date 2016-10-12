@@ -1,28 +1,444 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main2"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/picc"
-    tools:context="com.example.admin.qapp.Main2Activity">
+    android:layout_height="match_parent">
 
-    <Button
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="tech"
-        android:textSize="20sp"
-        android:id="@+id/btn_tech"
-        android:layout_weight="1"
-        android:textAllCaps="true"
-        android:layout_margin="8dp"
-        style="?android:attr/borderlessButtonStyle"
-        android:fontFamily="cursive"
-        android:onClick="tech"/>
+        android:layout_height="match_parent"
+        android:background="@drawable/picc"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.admin.qapp.Technology">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="cursive"
+            android:padding="8dp"
+            android:text="questions 1 of 5!"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#F95959"
+            android:textSize="25sp" />
 
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="what kind of 'MOV' extension does it referes to? "
+                    android:textAllCaps="true"
+                    android:textColor="#F95959"
+                    android:textSize="16sp"
+                    android:id="@+id/question1"/>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_g">
+
+
+                        <RadioButton
+                            android:id="@+id/btn_audio_file"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="casual"
+                            android:text="audio file"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/btn_office_document"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="casual"
+                            android:text="Ms office document"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="folder"
+                            android:id="@+id/btn_folder"
+                            android:onClick="onClick"
+                            android:textColor="#000000"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"/>
+
+                        <RadioButton
+                            android:id="@+id/btn_animation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="casual"
+                            android:text="Animation/movie file"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:lines="2"
+                    android:text="what is part of a database that holds only one type of information? "
+                    android:textAllCaps="true"
+                    android:textColor="#F95959"
+                    android:textSize="16sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2sp" />
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/btn_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="file"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+
+                    <RadioButton
+                        android:id="@+id/btn_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="report"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/btn_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="field"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/btn_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="record"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="in terms of computing what does ROM stands for? "
+                    android:textAllCaps="true"
+                    android:textColor="#F95959"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/btn_ROM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="read only memory"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+
+                    <RadioButton
+                        android:id="@+id/btn_red_orange_maroon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="red orange maroon"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/btn_record_of_mine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="record of mine"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/btn_random_access_memory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="random access memory  "
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+
+                </RadioGroup>
+A
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2sp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:text="when did the apple iPhone become available? "
+                android:textAllCaps="true"
+                android:textColor="#F95959"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/btn_2003"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="2003"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+
+                <RadioButton
+                    android:id="@+id/btn_2008"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="2008"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btn_1992"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="1992"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btn_2007"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="2007"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="in computing, keyboards are used as inputs devices"
+            android:textAllCaps="true"
+            android:textColor="#F95959"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/btn_true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="true"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+            <RadioButton
+                android:id="@+id/btn_false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="false"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="cursive"
+                android:padding="8dp"
+                android:text="results!"
+                android:id="@+id/results"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#F95959"
+                android:textSize="25sp" />
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <Button
+                android:id="@+id/btn_back"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:fontFamily="cursive"
+                android:onClick="back"
+                android:text="back"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/btn_score"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:fontFamily="cursive"
+                android:onClick="onClick"
+                android:text="score"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_clr"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:fontFamily="cursive"
+                android:onClick="clear"
+                android:text="clear"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

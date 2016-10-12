@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,23 +14,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
     }
 
     public  Button btn_tech;
 
 
             public void tech(View v){
-                Intent click =new Intent(MainActivity.this,Main2Activity.class);
+                Intent click =new Intent(MainActivity.this,Technology.class);
 
                 startActivity(click);
             }
 
-    public  Button btn_bio;
+    public  Button btn_biology;
 
 
-    public void bio(View v) {
-        Intent click = new Intent(MainActivity.this, Main3Activity.class);
+    public void biology (View v){
+        Intent click =new Intent(MainActivity.this,Biology.class);
 
         startActivity(click);
     }
@@ -41,11 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void history (View v){
-        Intent click =new Intent(MainActivity.this,Main4Activity.class);
+        Intent click =new Intent(MainActivity.this,History.class);
 
         startActivity(click);
     }
-
 
 
 
