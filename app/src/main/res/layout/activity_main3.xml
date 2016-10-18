@@ -442,7 +442,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="cursive"
                 android:padding="8dp"
-                android:text="results!"
+                android:text=""
                 android:id="@+id/score"
                 android:textAlignment="center"
                 android:textAllCaps="true"

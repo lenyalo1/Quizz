@@ -43,9 +43,15 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(click);
     }
-
-
-
+    public void Exit (View v) {
+        // TODO Auto-generated method stub
+        System.exit(0);
+        finish();
+    }
 }
+
+
+
+
 
 

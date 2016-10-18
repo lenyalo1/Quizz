@@ -70,7 +70,7 @@
                     <RadioGroup
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radio_g">
+                        android:id="@+id/radio_1">
 
 
                         <RadioButton
@@ -133,7 +133,8 @@
 
                 <RadioGroup
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_2">
 
                     <RadioButton
                         android:id="@+id/btn_file"
@@ -210,7 +211,8 @@
 
                 <RadioGroup
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_3">
 
                     <RadioButton
                         android:id="@+id/btn_ROM"
@@ -286,7 +288,8 @@ A
 
             <RadioGroup
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_4">
 
                 <RadioButton
                     android:id="@+id/btn_2003"
@@ -356,7 +359,8 @@ A
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_5">
 
             <RadioButton
                 android:id="@+id/btn_true"
@@ -382,7 +386,7 @@ A
                 android:layout_marginTop="8dp"
                 android:fontFamily="cursive"
                 android:padding="8dp"
-                android:text="results!"
+                android:text=""
                 android:id="@+id/results"
                 android:textAlignment="center"
                 android:textAllCaps="true"
@@ -427,7 +431,7 @@ A
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/btn_clr"
+                android:id="@+id/btn_clear"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.admin.qapp.MainActivity"
     android:orientation="vertical"
-    android:background="#43496E">
+    android:background="#3A4750">
 
     <TextView
         android:layout_width="match_parent"
@@ -17,8 +17,9 @@
         android:text="take a quizz!"
         android:textAllCaps="true"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="40sp"
         android:textStyle="italic"
+        android:textColor="#F6C90E"
         android:layout_marginTop="8dp"
         android:padding="16dp"
         android:fontFamily="cursive" />
@@ -34,11 +35,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="tech"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:id="@+id/btn_tech"
             android:layout_weight="1"
             android:textAllCaps="true"
             android:layout_margin="8dp"
+            android:textColor="#F6C90E"
             style="?android:attr/borderlessButtonStyle"
             android:fontFamily="cursive"
             android:onClick="tech"/>
@@ -47,11 +49,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="biology"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:id="@+id/btn_biology"
             android:textAllCaps="true"
             android:layout_weight="1"
             android:layout_margin="8dp"
+            android:textColor="#F6C90E"
             style="?android:attr/borderlessButtonStyle"
             android:fontFamily="cursive"
             android:onClick="biology"/>
@@ -61,12 +64,31 @@
             android:layout_height="wrap_content"
             android:text="history "
             android:id="@+id/btn_hist"
-            android:textSize="20sp"
+            android:textSize="25sp"
+            android:textColor="#F6C90E"
             android:textAllCaps="true"
             android:layout_weight="1"
             android:layout_margin="8dp"
             style="?android:attr/borderlessButtonStyle"
             android:fontFamily="cursive"
             android:onClick="history"/>
+
+
+
     </LinearLayout>
-</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exit"
+        android:textSize="25sp"
+        android:id="@+id/btn_exit"
+        android:layout_weight="1"
+        android:textAllCaps="true"
+        android:layout_margin="8dp"
+        android:paddingLeft="150dp"
+        android:textColor="#F6C90E"
+        style="?android:attr/borderlessButtonStyle"
+        android:fontFamily="cursive"
+        android:onClick="Exit"/>
+    </LinearLayout>
+

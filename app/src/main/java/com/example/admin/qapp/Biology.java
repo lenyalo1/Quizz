@@ -44,14 +44,13 @@ public class Biology extends AppCompatActivity implements View.OnClickListener {
 
     }
     public void clear(View v) {
-        TextView results =(TextView)findViewById(R.id.score);
+        TextView results=(TextView)findViewById(R.id.score);
         results.setText("");
         radio1.clearCheck();
         radio2.clearCheck();
         radio3.clearCheck();
         radio4.clearCheck();
         radio5.clearCheck();
-
     }
 
     @Override
@@ -59,7 +58,7 @@ public class Biology extends AppCompatActivity implements View.OnClickListener {
 
         int score = 0;
         if (btn_keratin.isChecked()) {
-            score += 1;
+            score += 2;
 
         }
         if (btn_melanin.isChecked()) {
@@ -77,5 +76,8 @@ public class Biology extends AppCompatActivity implements View.OnClickListener {
         TextView results =(TextView)findViewById(R.id.score);
         results.setText("your total score is...." + score);
     }
+
     }
+
+
 

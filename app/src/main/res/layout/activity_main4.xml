@@ -73,7 +73,8 @@
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/radioA">
 
 
             <RadioButton
@@ -158,7 +159,8 @@
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/radioB">
 
 
             <RadioButton
@@ -243,7 +245,8 @@
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/radioC">
 
 
             <RadioButton
@@ -328,7 +331,8 @@
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/radioD">
 
 
             <RadioButton
@@ -414,7 +418,8 @@
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/radioE">
 
 
             <RadioButton
@@ -463,11 +468,11 @@
             android:layout_marginTop="8dp"
             android:fontFamily="cursive"
             android:padding="8dp"
-            android:text="results!"
+            android:text=""
             android:id="@+id/history_results"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="#000000"
+            android:textColor="#C70039"
             android:textSize="25sp" />
 
     </LinearLayout>
@@ -490,7 +495,7 @@
             android:fontFamily="cursive"
             android:onClick="back"
             android:text="back"
-            android:textColor="#000000"
+            android:textColor="#C70039"
             android:textAllCaps="true"
             android:textSize="20sp" />
 
@@ -505,7 +510,7 @@
             android:fontFamily="cursive"
             android:onClick="score"
             android:text="score"
-            android:textColor="#000000"
+            android:textColor="#C70039"
             android:textAllCaps="true"
             android:textSize="20sp" />
 
@@ -519,7 +524,7 @@
             android:fontFamily="cursive"
             android:onClick="clear"
             android:text="clear"
-            android:textColor="#000000"
+            android:textColor="#C70039"
             android:textAllCaps="true"
             android:textSize="20sp" />
 
